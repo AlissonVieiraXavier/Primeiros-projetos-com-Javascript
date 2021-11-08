@@ -1,2 +1,2 @@
 # calculartorJs
-Calculadora com Javascript
+Calculadora com html,Css e Javascript
