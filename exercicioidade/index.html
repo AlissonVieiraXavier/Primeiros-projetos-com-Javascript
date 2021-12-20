@@ -38,7 +38,7 @@
     </header>
     <section>
         <div>
-            <p>Ano de nascimento: <input type="number" name="txtano" min="1900" max="3000" id="anodenasc"></p>
+            <p>Ano de nascimento: <input type="number" name="txtano" id="anodenasc"></p>
             <p>Sexo:
                 <input type="radio" name="radsex" id="masc">
                 <label for="masc">Masculino</label>
@@ -58,16 +58,7 @@
         <div>2021 &copy; Alisson Vieira Xavier</div>
     </footer>
 
-    <script>
-
-        function verificar() {
-            let data = new Date();
-            let ano = data.getFullYear();
-            let fano = document.querySelector("#anodenasc");
-
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
