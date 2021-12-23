@@ -24,6 +24,8 @@ input{
 }
 
 .main{
+    position: fixed;
+    bottom:250px;
     display: inline-block;
     border: 3px double rgb(247, 249, 248);
     width: 345px;
@@ -34,6 +36,7 @@ input{
     color:rgb(74, 75, 77) ;
     width: auto;
     padding-left: 10px;
+    border-radius:5px;
 }
 
 .num-maincolor{

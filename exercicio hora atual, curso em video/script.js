@@ -1,3 +1,4 @@
+
 function carregar() {
     var mensagem = document.querySelector("#msg");
     var imagem = document.getElementById("img");
@@ -20,3 +21,4 @@ function carregar() {
     }
 
 };
+
