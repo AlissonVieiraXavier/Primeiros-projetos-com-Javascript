@@ -44,13 +44,14 @@ function verificar() {
 
         }
         res.style.textAlign = "center";
-        res.innerHTML = ` Detectamos ${genero} com ${idade} anos`;
+        res.innerHTML = ` Detectamos ${genero} com ${idade} anos <br>`;
 
         //adiciona a imagem
-        res.style.marginTop = "10px"
-        img.style.width = "500px";
-        img.style.width = "500px";
-        img.style.borderRadius = "100%";
+        res.style.marginTop = "10px";
+        img.style.marginTop = "10px";
+        img.style.width = "400px";
+        img.style.height = "500px";
+        img.style.borderRadius = "120%";
 
         res.appendChild(img);
 
