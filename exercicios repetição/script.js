@@ -2,11 +2,20 @@ function contar() {
     let inicio = document.getElementById("txt1")
     let fim = document.querySelector("#txtf")
     let passo = document.querySelector("#txtp")
+    let res = document.getElementById("resultado")
+
 
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         alert("[ERRO] Faltam dados!")
 
     } else {
-        alert("agaragabicth")
+        res.innerHTML = "Contando...  <br>"
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for (let c = i; c <= f; c += p) {
+            res.innerHTML += ` ${c} <br>`
+        }
     }
 }
