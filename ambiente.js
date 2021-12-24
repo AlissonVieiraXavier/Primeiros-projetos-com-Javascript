@@ -1,6 +1,3 @@
-var c = 1;
-do {
-    console.log("shitmama")
-    c++
+for (var c = 0; c < 10; c++) {
+    console.log("xuxu beleza");
 }
-while (c <= 10);
