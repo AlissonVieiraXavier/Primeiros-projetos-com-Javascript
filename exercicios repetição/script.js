@@ -13,9 +13,13 @@ function contar() {
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-
-        for (let c = i; c <= f; c += p) {
-            res.innerHTML += ` ${c} <br>`
+        if (i < f) {
+            for (let c = i; c <= f; c += p) {
+                res.innerHTML += ` ${c} \u{1F449} <br>`
+            } else {
+                alert("[ERRO] Dados incorretos!")
+            };
         }
+
     }
 }
