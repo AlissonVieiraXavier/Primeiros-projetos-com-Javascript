@@ -12,8 +12,8 @@ var tdinfo = document.querySelector(".info-imc");
 info = tdinfo.textContent;
 
 
-if (peso < 0 || peso > 1000 || altura > 2.50) {
-    Alert(" Peso ou altura invalidos!");
+if (peso < 0 || peso > 600 || altura > 3.00) {
+    tdinfo.textContent = " Peso ou altura inválidos!";
 } else {
     //calculo imc
     var resultadoimc = peso / (altura * altura);
