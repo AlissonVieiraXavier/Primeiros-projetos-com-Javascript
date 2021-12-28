@@ -1,30 +1,36 @@
 
 // armazenando Valores
-var paciente = document.querySelector("#primeiropaciente");
+var paciente = document.getElementsByClassName("paciente");
 
-var tdpeso = document.querySelector(".info-peso");
-peso = tdpeso.textContent;
+console.log(paciente);
 
-var tdaltura = document.querySelector(".info-altura");
-altura = tdaltura.textContent;
+for (var i = 0; i < paciente.length; i++) {
+    var tdpeso = document.querySelector(".info-peso");
+    peso = tdpeso.textContent;
 
-var tdinfo = document.querySelector(".info-imc");
-info = tdinfo.textContent;
+    var tdaltura = document.querySelector(".info-altura");
+    altura = tdaltura.textContent;
 
-
-if (peso < 0 || peso > 600 || altura > 3.00) {
-    tdinfo.textContent = " Peso ou altura inválidos!";
-} else {
-    //calculo imc
-    var resultadoimc = peso / (altura * altura);
-
-    // apresentando resultado ao usuario
-    tdinfo.innerHTML = resultadoimc;
-
-    //segundo paciente
+    var tdinfo = document.querySelector(".info-imc");
+    info = tdinfo.textContent;
 
 
+    if (peso < 0 || peso > 600 || altura > 3.00) {
+        tdinfo.textContent = " Peso ou altura inválidos!";
+    } else {
+        //calculo imc
+        var resultadoimc = peso / (altura * altura);
+
+        // apresentando resultado ao usuario
+        tdinfo.innerHTML = resultadoimc;
+
+        //segundo paciente
+
+
+    }
 }
+
+
 
 
 
