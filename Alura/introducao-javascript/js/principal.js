@@ -41,11 +41,10 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-titulo.addEventListener("click", mostraMensagem);
+var botaoAdicionar = document.getElementById("adicionar-paciente");
+botaoAdicionar.addEventListener("click", function () {
 
-function mostraMensagem() {
-    alert("Olá Mundo")
-}
+})
 
 
 
