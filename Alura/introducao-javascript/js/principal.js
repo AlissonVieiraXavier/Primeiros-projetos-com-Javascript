@@ -22,10 +22,10 @@ for (var i = 0; i < pacientes.length; i++) {
         console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
-        paciente.classList.add("paciente-invalido");
-        paciente.style.backgroundColor = 'red';
-        paciente.style.color = "white";
-        paciente.style.fontWeight = "bold";
+        paciente.classList.add("linha-com-erro-de-validacao");
+        /* paciente.style.backgroundColor = 'red';
+         paciente.style.color = "white";
+         paciente.style.fontWeight = "bold";*/
 
     }
 
@@ -33,10 +33,10 @@ for (var i = 0; i < pacientes.length; i++) {
         console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
-        paciente.classList.add("paciente-invalido");
-        paciente.style.backgroundColor = 'red';
-        paciente.style.color = "white";
-        paciente.style.fontWeight = "bold";
+        paciente.classList.add("linha-com-erro-de-validacao");
+        /* paciente.style.backgroundColor = 'red';
+         paciente.style.color = "white";
+         paciente.style.fontWeight = "bold";*/
     }
 
     if (pesoEhValido && alturaEhValida) {
@@ -45,6 +45,6 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-dasdsdsds
+
 
 
