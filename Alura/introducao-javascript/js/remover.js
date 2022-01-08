@@ -1,10 +1,10 @@
 var pacientes = document.querySelectorAll(".paciente")
-var tabela = document.querySelector(".table");
+var tabela = document.querySelector("table");
 
-tabela.forEach("dblclick", function (event) {
-    console.log(event.target)
+tabela.addEventListener("dblclick", function (event) {
+    event.target.parentNode.remove();
 
-})
+});
 
 
 
