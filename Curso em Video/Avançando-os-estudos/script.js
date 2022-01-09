@@ -26,4 +26,3 @@ function adicionar() {
         alert("Valor inválido ou já adicionado!")
     }
 }
-//teste branch
