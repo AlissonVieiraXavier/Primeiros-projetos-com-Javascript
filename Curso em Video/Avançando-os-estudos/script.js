@@ -12,13 +12,18 @@ function isNumero(n) {
     }
 }
 function inlista(n, l) {
-
+    if (l.indexOf(Number(n)) != -1) {
+        return true;
+    } else {
+        return false;
+    }
 }
-
+//Adicionando valores
 function adicionar() {
-    if (isNumero(valor.value) && !inlista(num.value, valores)) {
-
+    if (isNumero(valor.value) && !inlista(valor.value, valores)) {
+        alert("alright")
     } else {
         alert("Valor inválido ou já adicionado!")
     }
 }
+//teste branch
