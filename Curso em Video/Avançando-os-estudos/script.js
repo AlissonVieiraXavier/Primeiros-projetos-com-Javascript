@@ -1,5 +1,10 @@
+var lista = document.querySelector("#flista");
+var valor = document.querySelector(".input");
+var resultado = document.querySelector("#res");
+
+
+
 function adicionar() {
-    let valor = document.querySelector(".input");
     let armazenaValor = valor.value;
     console.log(armazenaValor)
 
