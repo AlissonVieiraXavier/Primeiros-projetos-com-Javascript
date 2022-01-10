@@ -26,7 +26,7 @@ function adicionar() {
         let item = document.createElement("option");
         item.text = `Valor ${valor.value} adicionado`;
         lista.appendChild(item);
-
+        resultado.innerHTML = '';
 
     } else {
         alert("Valor inválido ou já adicionado!")
@@ -40,8 +40,12 @@ function finalizar() {
         alert("Favor adicionar valores antes de finalizar!");
     } else {
         let tot = valores.length;
+        var maior = Math.max.apply(null, valores);
+
 
         resultado.innerHTML = "";
+        resultado.innerHTML += `<p>Ao todo temos ${tot} numeros adicionados</p>`
+        resultado.innerHTML += `<p>O maior valor é o ${maior}</p> `
     }
 
 }
