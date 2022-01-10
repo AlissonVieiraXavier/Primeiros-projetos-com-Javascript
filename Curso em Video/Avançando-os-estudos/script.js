@@ -40,9 +40,6 @@ function finalizar() {
         alert("Favor adicionar valores antes de finalizar!");
     } else {
         let tot = valores.length;
-        /* let maior = Math.max.apply(null, valores);
-         let menor = Math.min.apply(null, valores);
-         let soma = somar(valores);*/
         let maior = valores[0];
         let menor = valores[0];
         let soma = 0;
