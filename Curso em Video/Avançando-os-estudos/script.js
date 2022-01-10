@@ -40,12 +40,18 @@ function finalizar() {
         alert("Favor adicionar valores antes de finalizar!");
     } else {
         let tot = valores.length;
-        var maior = Math.max.apply(null, valores);
+        /* let maior = Math.max.apply(null, valores);
+         let menor = Math.min.apply(null, valores);
+         let soma = somar(valores);*/
+
+
 
 
         resultado.innerHTML = "";
-        resultado.innerHTML += `<p>Ao todo temos ${tot} numeros adicionados</p>`
-        resultado.innerHTML += `<p>O maior valor é o ${maior}</p> `
+        resultado.innerHTML += `<p>Ao todo temos ${tot} numeros adicionados.</p>`
+        resultado.innerHTML += `<p>O maior valor é o ${maior}.</p> `
+        resultado.innerHTML += `<p>O menor valor é o ${menor}.</p> `
+        resultado.innerHTML += `a soma dos valores adicionados ´é ${soma}.</p> `
     }
 
 }
