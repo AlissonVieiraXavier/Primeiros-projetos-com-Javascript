@@ -31,4 +31,17 @@ function adicionar() {
     } else {
         alert("Valor inválido ou já adicionado!")
     }
+    valor.value = "";
+    valor.focus();
+}
+// configurando botão finalizar e efetuando analise de dados!
+function finalizar() {
+    if (valores == 0) {
+        alert("Favor adicionar valores antes de finalizar!");
+    } else {
+        let tot = valores.length;
+
+        resultado.innerHTML = "";
+    }
+
 }
