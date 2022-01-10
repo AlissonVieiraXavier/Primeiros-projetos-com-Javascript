@@ -21,7 +21,10 @@ function inlista(n, l) {
 //Adicionando valores
 function adicionar() {
     if (isNumero(valor.value) && !inlista(valor.value, valores)) {
-        alert("alright")
+        valores.push(valor.value)
+        console.log(valores)
+
+
     } else {
         alert("Valor inválido ou já adicionado!")
     }
