@@ -43,7 +43,15 @@ function finalizar() {
         /* let maior = Math.max.apply(null, valores);
          let menor = Math.min.apply(null, valores);
          let soma = somar(valores);*/
-
+        let maior = valores[0];
+        let menor = valores[0];
+        for (let pos in valores) {
+            if (valores[pos] > maior) {
+                maior = valores[pos];
+            } if (valores[pos] < menor) {
+                menor = valores[pos];
+            }
+        }
 
 
 
@@ -51,7 +59,7 @@ function finalizar() {
         resultado.innerHTML += `<p>Ao todo temos ${tot} numeros adicionados.</p>`
         resultado.innerHTML += `<p>O maior valor é o ${maior}.</p> `
         resultado.innerHTML += `<p>O menor valor é o ${menor}.</p> `
-        resultado.innerHTML += `a soma dos valores adicionados ´é ${soma}.</p> `
+        // resultado.innerHTML += `a soma dos valores adicionados ´é ${soma}.</p> `
     }
 
 }
