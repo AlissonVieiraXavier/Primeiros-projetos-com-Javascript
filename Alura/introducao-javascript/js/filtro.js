@@ -1,2 +1,4 @@
-const campoFiltro = document.getElementById("filtrar-tabela");
-console.log(campoFiltro)
+const campoFiltro = document.querySelector("#filtrar-tabela");
+campoFiltro.addEventListener('input', () => {
+    console.log("digitando...")
+})
