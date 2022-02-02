@@ -4,7 +4,6 @@ class Cliente {
     cpf;
     agencia;
     saldo;
-
 }
 
 const cliente1Nome = "Ricardo";
