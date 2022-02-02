@@ -19,4 +19,4 @@ cliente2.cpf = 11629283844;
 cliente2.agencia = 1001;
 cliente2.saldo = 0;
 
-console.log(cliente1, cliente2)
+console.log(cliente1, cliente2);
