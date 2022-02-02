@@ -8,3 +8,5 @@ const cliente2Nome = "Alice";
 const cliente2CPF = 11629283844;
 const cliente2Agencia = 1001;
 const cliente2Saldo = 0;
+
+console.log(cliente2Nome);
