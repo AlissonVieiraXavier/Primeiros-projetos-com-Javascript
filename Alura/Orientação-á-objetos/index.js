@@ -5,6 +5,12 @@ class Cliente {
     agencia;
     saldo;
 }
+
+class ContaCorrente {
+
+}
+
+
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
 
