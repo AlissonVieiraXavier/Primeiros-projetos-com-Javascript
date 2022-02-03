@@ -54,7 +54,7 @@ console.log(ContaCorrenteRicardo.saldo);
 
 //saque
 ContaCorrenteRicardo.sacar(60);
-//console.log(ContaCorrenteRicardo.saldo);
+console.log(ContaCorrenteRicardo);
 
 
 const ContaCorrenteAlice = new ContaCorrente();
