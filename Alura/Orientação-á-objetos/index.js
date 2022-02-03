@@ -9,14 +9,21 @@ class ContaCorrente {
     saldo;
 
     sacar(valor) {
-        if (ContaCorrenteRicardo.saldo >= valor) {
-            ContaCorrenteRicardo.saldo -= valor;
-            console.log(ContaCorrenteRicardo.saldo);
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            console.log(this.saldo);
 
         } else {
             console.log("não é possivel sacar este valor, pois ele é maior que seu saldo");
         }
+
     };
+
+    depositar(valor) {
+        if (valor > 0) {
+            this.saldo += valor;
+        }
+    }
 }
 
 
@@ -34,16 +41,20 @@ ContaCorrenteRicardo.saldo = 0;
 ContaCorrenteRicardo.agencia = 1001;
 
 console.log(ContaCorrenteRicardo.saldo);
-ContaCorrenteRicardo.saldo = 100;
+ContaCorrenteRicardo.depositar(100);
+ContaCorrenteRicardo.depositar(200);
+ContaCorrenteRicardo.depositar(-1);
+
 console.log(ContaCorrenteRicardo.saldo);
-let valorSacado = 200;
 
 
+ContaCorrenteRicardo.sacar(60);
+//console.log(ContaCorrenteRicardo.saldo);
 
 
 const ContaCorrenteAlice = new ContaCorrente();
 ContaCorrenteAlice.agencia = 1001;
 ContaCorrenteAlice.saldo = 0;
 
-console.log(cliente1);
-console.log(cliente2);
+//console.log(cliente1);
+//console.log(cliente2);
