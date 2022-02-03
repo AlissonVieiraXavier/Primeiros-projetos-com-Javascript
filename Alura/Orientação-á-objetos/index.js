@@ -27,7 +27,7 @@ class ContaCorrente {
 }
 
 
-
+// armazenado os Clientes no objeto;
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
 cliente1.cpf = 11122233344;
@@ -36,18 +36,21 @@ const cliente2 = new Cliente();
 cliente2.nome = "Alice";
 cliente2.cpf = 11629283844;
 
+//Armazenando as contas do cliente em um objeto;
 const ContaCorrenteRicardo = new ContaCorrente();
 ContaCorrenteRicardo.saldo = 0;
 ContaCorrenteRicardo.agencia = 1001;
 
 console.log(ContaCorrenteRicardo.saldo);
+
+//deposito
 ContaCorrenteRicardo.depositar(100);
 ContaCorrenteRicardo.depositar(200);
 ContaCorrenteRicardo.depositar(-1);
 
 console.log(ContaCorrenteRicardo.saldo);
 
-
+//saque
 ContaCorrenteRicardo.sacar(60);
 //console.log(ContaCorrenteRicardo.saldo);
 
