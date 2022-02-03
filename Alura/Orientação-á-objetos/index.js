@@ -17,13 +17,20 @@ const cliente2 = new Cliente();
 cliente2.nome = "Alice";
 cliente2.cpf = 11629283844;
 
-const ContaCorrentRicardo = new ContaCorrente();
-ContaCorrentRicardo.agencia = 0010;
-ContaCorrentRicardo.saldo = 0;
+const ContaCorrenteRicardo = new ContaCorrente();
+ContaCorrenteRicardo.saldo = 0;
+ContaCorrenteRicardo.agencia = 1001;
 
-const ContaCorrentAlice = new ContaCorrente();
-ContaCorrentAlice.agencia = 0010;
-ContaCorrentAlice.saldo = 0;
+console.log(ContaCorrenteRicardo.saldo);
+ContaCorrenteRicardo.saldo = 100;
+console.log(ContaCorrenteRicardo.saldo);
+let valorSacado = 200;
+ContaCorrenteRicardo.saldo -= valorSacado;
+console.log(ContaCorrenteRicardo.saldo);
+
+const ContaCorrenteAlice = new ContaCorrente();
+ContaCorrenteAlice.agencia = 1001;
+ContaCorrenteAlice.saldo = 0;
 
 console.log(cliente1);
 console.log(cliente2);
