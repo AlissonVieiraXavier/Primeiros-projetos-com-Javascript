@@ -22,6 +22,8 @@ class ContaCorrente {
     depositar(valor) {
         if (valor > 0) {
             this.saldo += valor;
+        } else {
+            console.log("Impossivel depositar valor negativo");
         }
     }
 }
