@@ -7,7 +7,19 @@ class Cliente {
 class ContaCorrente {
     agencia;
     saldo;
+
+    sacar(valor) {
+        if (ContaCorrenteRicardo.saldo >= valor) {
+            ContaCorrenteRicardo.saldo -= valor;
+            console.log(ContaCorrenteRicardo.saldo);
+
+        } else {
+            console.log("não é possivel sacar este valor, pois ele é maior que seu saldo");
+        }
+    };
 }
+
+
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
@@ -25,8 +37,9 @@ console.log(ContaCorrenteRicardo.saldo);
 ContaCorrenteRicardo.saldo = 100;
 console.log(ContaCorrenteRicardo.saldo);
 let valorSacado = 200;
-ContaCorrenteRicardo.saldo -= valorSacado;
-console.log(ContaCorrenteRicardo.saldo);
+
+
+
 
 const ContaCorrenteAlice = new ContaCorrente();
 ContaCorrenteAlice.agencia = 1001;
