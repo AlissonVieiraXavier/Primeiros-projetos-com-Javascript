@@ -18,3 +18,5 @@ cliente2.nome = "Alice";
 cliente2.cpf = 11629283844;
 
 
+console.log(cliente1);
+console.log(cliente2);
