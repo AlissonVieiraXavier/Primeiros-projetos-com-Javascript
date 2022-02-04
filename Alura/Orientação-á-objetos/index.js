@@ -6,7 +6,7 @@ class Cliente {
 }
 class ContaCorrente {
     agencia;
-    #saldo;
+    #saldo = 0;
 
     sacar(valor) {
         if (this.#saldo >= valor) {
@@ -21,6 +21,7 @@ class ContaCorrente {
     depositar(valor) {
         if (valor > 0) {
             this.#saldo += valor;
+            console.log(this.#saldo)
         } else {
             console.log("Impossivel depositar valor negativo");
         }
@@ -39,26 +40,26 @@ cliente2.cpf = 11629283844;
 
 //Armazenando as contas do cliente em um objeto;
 const ContaCorrenteRicardo = new ContaCorrente();
-ContaCorrenteRicardo.#saldo = 10000;
+//ContaCorrenteRicardo.#saldo = 10000;
 ContaCorrenteRicardo.agencia = 1001;
 
-console.log(ContaCorrenteRicardo);
 
-//deposito
+
+
 ContaCorrenteRicardo.depositar(100);
 ContaCorrenteRicardo.depositar(200);
-ContaCorrenteRicardo.depositar(-1);
+//ContaCorrenteRicardo.depositar(-1);
 
 
 
-//saque
+
 ContaCorrenteRicardo.sacar(60);
 console.log(ContaCorrenteRicardo);
 
 
 const ContaCorrenteAlice = new ContaCorrente();
 ContaCorrenteAlice.agencia = 1001;
-ContaCorrenteAlice.#saldo = 0;
+//ContaCorrenteAlice.#saldo = 0;
 
 //console.log(cliente1);
 //console.log(cliente2);
