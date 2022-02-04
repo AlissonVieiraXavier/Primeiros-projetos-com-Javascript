@@ -11,9 +11,8 @@ class ContaCorrente {
     sacar(valor) {
         if (this._saldo >= valor) {
             this._saldo -= valor;
+            return valor;
 
-        } else {
-            console.log("não é possivel sacar este valor, pois ele é maior que seu saldo");
         }
 
     };
