@@ -1,3 +1,5 @@
+import { Cliente } from "./Cliente.js"
+import { ContaCorrente } from "./ContaCorrente.js"
 
 // armazenado os Clientes no objeto;
 const cliente1 = new Cliente();
