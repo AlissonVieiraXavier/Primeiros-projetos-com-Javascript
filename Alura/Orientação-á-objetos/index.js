@@ -18,14 +18,13 @@ class ContaCorrente {
     };
 
     depositar(valor) {
-        if (valor >= 0) {
-            this._saldo += valor;
-
-        } else {
-            console.log("Impossivel depositar valor negativo");
+        if (valor <= 0) {
+            return;
         }
+        this._saldo += valor;
     }
 }
+
 
 
 // armazenado os Clientes no objeto;
