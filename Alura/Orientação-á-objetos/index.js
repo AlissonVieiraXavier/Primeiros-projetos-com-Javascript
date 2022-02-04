@@ -39,17 +39,17 @@ cliente2.cpf = 11629283844;
 
 //Armazenando as contas do cliente em um objeto;
 const ContaCorrenteRicardo = new ContaCorrente();
-ContaCorrenteRicardo.saldo = 0;
+ContaCorrenteRicardo.#saldo = 10000;
 ContaCorrenteRicardo.agencia = 1001;
 
-console.log(ContaCorrenteRicardo.saldo);
+console.log(ContaCorrenteRicardo);
 
 //deposito
 ContaCorrenteRicardo.depositar(100);
 ContaCorrenteRicardo.depositar(200);
 ContaCorrenteRicardo.depositar(-1);
 
-console.log(ContaCorrenteRicardo.saldo);
+
 
 //saque
 ContaCorrenteRicardo.sacar(60);
@@ -58,7 +58,7 @@ console.log(ContaCorrenteRicardo);
 
 const ContaCorrenteAlice = new ContaCorrente();
 ContaCorrenteAlice.agencia = 1001;
-ContaCorrenteAlice.saldo = 0;
+ContaCorrenteAlice.#saldo = 0;
 
 //console.log(cliente1);
 //console.log(cliente2);
