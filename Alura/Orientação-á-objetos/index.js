@@ -6,11 +6,11 @@ class Cliente {
 }
 class ContaCorrente {
     agencia;
-    #saldo = 0;
+    _saldo = 0;
 
     sacar(valor) {
-        if (this.#saldo >= valor) {
-            this.#saldo -= valor;
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
 
         } else {
             console.log("não é possivel sacar este valor, pois ele é maior que seu saldo");
@@ -19,9 +19,9 @@ class ContaCorrente {
     };
 
     depositar(valor) {
-        if (valor > 0) {
-            this.#saldo += valor;
-            console.log(this.#saldo)
+        if (valor >= 0) {
+            this._saldo += valor;
+
         } else {
             console.log("Impossivel depositar valor negativo");
         }
@@ -55,7 +55,8 @@ ContaCorrenteRicardo.depositar(200);
 
 
 
-ContaCorrenteRicardo.sacar(50);
+const valorSacado = ContaCorrenteRicardo.sacar(50);
+console.log(valorSacado);
 console.log(ContaCorrenteRicardo);
 
 
