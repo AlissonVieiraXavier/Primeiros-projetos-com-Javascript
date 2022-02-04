@@ -48,12 +48,14 @@ ContaCorrenteRicardo.agencia = 1001;
 
 ContaCorrenteRicardo.depositar(100);
 ContaCorrenteRicardo.depositar(200);
+ContaCorrenteRicardo.depositar(200);
+ContaCorrenteRicardo.depositar(200);
 
 
 
 
 
-ContaCorrenteRicardo.sacar(60);
+ContaCorrenteRicardo.sacar(50);
 console.log(ContaCorrenteRicardo);
 
 
