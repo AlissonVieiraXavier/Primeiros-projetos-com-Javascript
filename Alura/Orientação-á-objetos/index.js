@@ -21,7 +21,7 @@ conta2.agencia = 102;
 
 let valor = 200;
 contaCorrenteRicardo.tranferir(valor, conta2);
-console.log(conta2.saldo);
+console.log(conta2);
 
 
 
