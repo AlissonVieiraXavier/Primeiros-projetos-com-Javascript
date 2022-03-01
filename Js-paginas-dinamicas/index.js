@@ -24,6 +24,14 @@ for (contador = 0; contador < listaDeTeclas.length; contador++) {
         }, 200);
         ///////////////////
     }
+
+
+
+
+
+
+
+
     /*tecla.onkeydown = function () {
         tecla.classList.add("ativa");
 
