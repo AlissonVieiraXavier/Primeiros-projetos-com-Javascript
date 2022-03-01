@@ -14,13 +14,15 @@ for (contador = 0; contador < listaDeTeclas.length; contador++) {
         tocaSom(IdAudio);
     }
 
+
     tecla.onkeydown = function () {
         tecla.classList.add("ativa");
+        ///////////////////
         tocaSom(IdAudio);
         setTimeout(() => {
             tecla.classList.remove("ativa");
-        }, 500);
-
+        }, 200);
+        ///////////////////
     }
     /*tecla.onkeydown = function () {
         tecla.classList.add("ativa");
