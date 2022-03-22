@@ -1,4 +1,4 @@
-
+<?php
  
 function ga_track_event_form_submission( $fields, $entry, $form_data, $entry_id ) {
  
@@ -21,3 +21,5 @@ function ga_track_event_form_submission( $fields, $entry, $form_data, $entry_id 
 }
  
 add_action( 'wpforms_process_complete_25', 'ga_track_event_form_submission', 10, 4 );
+
+?>
