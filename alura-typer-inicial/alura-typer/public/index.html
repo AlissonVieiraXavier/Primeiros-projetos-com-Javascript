@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Vel necessitatibus earum ex illum quis, at reiciendis corporis
-     officia doloribus perferendis dicta consequatur. Quisquam nesciunt
-     molestias corporis quae aliquid vitae eligendi.</p>
-
-     <ul class="informacoes">
-         <li><span id="tamanhoDaFrase">5</span> palavras</li>
-         <li>10 segundos</li>
-     </ul>
-     <textarea cols="40" rows="8" class="campo-de-digitacao"></textarea>
-     <ul class="informacoes">
-        <li><span id="contador-caracteres">0</span> palavras</li>
-        <li><span id="contador-segundos">0</span> segundos</li>
-    </ul>
+    <main>
+        <h1 class="titletop">Write Parser</h1>
+        <p class="frase"> basta escrever que o Write Parser ira informar detalhes sobre as palavras e o tempo que você levou para escreve-las;</p>
+    
+        <!-- <ul class="informacoes">
+             <li><span id="tamanhoDaFrase">5</span> palavras</li>
+             <li><span>0</span> segundos</li>
+         </ul> -->
+         <textarea cols="40" rows="8" class="campo-de-digitacao" placeholder="digite aqui"></textarea>
+         <ul class="informacoes">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+    </main>
+   
      <script src="js/jquery.js"></script>
      <script src="js/main.js"></script>
 </body>
