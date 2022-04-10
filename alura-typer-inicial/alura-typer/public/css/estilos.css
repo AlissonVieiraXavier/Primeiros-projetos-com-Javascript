@@ -39,6 +39,7 @@ span{
 textarea{
 width: 80%;
 height:15em;
+border:none;
 }
 textarea:selected{
     border:none;
