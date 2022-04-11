@@ -13,6 +13,12 @@ campo.on("input", function(){
   $("#contador-caracteres").text(quantidadeCaracteres);
 })
 
+let tempoRestante = $("tempo-digitacao").text();
 campo.on("focus",function(){
-  
+  setInterval(function(){
+     tempoRestante--;
+     console.log(tempoRestante);
+     $("tempo-digitacao").text(tempoRestante);
+
+  },1000);
 })
