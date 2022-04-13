@@ -13,12 +13,17 @@ campo.on("input", function(){
   $("#contador-caracteres").text(quantidadeCaracteres);
 })
 
-let tempoRestante = $("tempo-digitacao").text();
+let tempoRestante = $("#tempo-digitacao").text();
 campo.on("focus",function(){
   setInterval(function(){
      tempoRestante--;
      console.log(tempoRestante);
-     $("tempo-digitacao").text(tempoRestante);
+     $("#tempo-digitacao").text(tempoRestante);
+     if (tempoRestante < 1){
+          campo.attr("disabled",true);
+          tempoRestante = 1;
+
+     };
 
   },1000);
 })
