@@ -27,3 +27,9 @@ campo.on("focus",function(){
 
   },1000);
 })
+
+let botao = $("#botaoRestart");
+botao.on("click", function(){
+console.log("working");
+
+})
